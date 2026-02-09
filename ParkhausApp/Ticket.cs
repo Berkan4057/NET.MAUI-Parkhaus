@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace ParkhausApp
 {
-    internal class Ticket
+     public class Ticket
     {
         public Ticket() { }
 
