@@ -16,7 +16,7 @@ namespace ParkhausApp
             
         }
 
-        private async void OpenBarrier(object sender, EventArgs e)
+          private async void OpenBarrier(object sender, EventArgs e)
         {
             barrier.Text = "Schranke offen";
 
@@ -33,10 +33,14 @@ namespace ParkhausApp
 
             await DisplayAlert("Ticket", "Die Schranke ist jetzt offen.", "OK");
 
-            await Navigation.PushAsync(new TicketDetailPage(_currentTicket));
+            await Navigation.PushAsync(new Dashboard(_currentTicket));
 
             barrier.Text = "Schranke geschlossen";
 
         }
+        
+        
+       
+     
     }
 }
