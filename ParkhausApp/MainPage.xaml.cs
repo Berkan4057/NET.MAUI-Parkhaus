@@ -13,12 +13,13 @@ namespace ParkhausApp
         public MainPage()
         {
             InitializeComponent();
-           
+            
         }
 
         private async void OpenBarrier(object sender, EventArgs e)
         {
             barrier.Text = "Schranke offen";
+
 
             // Create a new Ticket 
             _currentTicket = new Ticket

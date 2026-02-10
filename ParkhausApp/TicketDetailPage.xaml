@@ -12,6 +12,10 @@
 
         <Label x:Name="IsPaidLabel" Text="Ist bezahlt"/>
 
+        <Label x:Name="PriceLabel" Text=" "/>
+
+
+
         <Button Text="Bezahlen" Clicked="PayButton_Clicked" />
 
 

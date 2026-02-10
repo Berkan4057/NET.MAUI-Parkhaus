@@ -12,7 +12,7 @@ namespace ParkhausApp
         public Ticket() { }
 
         public int TicketNumber { get; set; }
-        public decimal Price { get; set; }
+        public double Price { get; set; }
         public DateTime EntryTime { get; set; }
         public bool IsPaid { get; set; }
 
