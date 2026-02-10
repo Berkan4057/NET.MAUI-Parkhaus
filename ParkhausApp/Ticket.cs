@@ -16,7 +16,7 @@ namespace ParkhausApp
         public DateTime EntryTime { get; set; }
         public bool IsPaid { get; set; }
 
-
+      
 
         }
         

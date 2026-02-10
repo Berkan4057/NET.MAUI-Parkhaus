@@ -4,9 +4,9 @@
              x:Class="ParkhausApp.Dashboard"
              Title="Dashboard">
     <VerticalStackLayout>
-        <Label 
-            Text="Welcome to .NET MAUI!"
-            VerticalOptions="Center" 
-            HorizontalOptions="Center" />
+        <Label Text="Aktuelle Parkzeit"/>
+
+        <Label x:Name="CurrentParkTimeLabel" Text="" />
+
     </VerticalStackLayout>
 </ContentPage>
