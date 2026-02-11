@@ -8,6 +8,10 @@ public partial class Dashboard : ContentPage
 	{
 		InitializeComponent();
 		_ticket = ticket;
+        TicketNumberLabel.Text = $"Ticket Nummer: {_ticket.TicketNumber}";
+        IsPaidLabel.Text = $"Bezahlt: {_ticket.IsPaid}";
+        EntryTimeLabel.Text = $"Eintritt: {_ticket.EntryTime:g}";
+
 
     }
 	protected override void OnAppearing()
@@ -15,8 +19,8 @@ public partial class Dashboard : ContentPage
 		base.OnAppearing();
 		StartParkingTimer();
 		CurrentPrice();
-        TicketNumberLabel.Text = $"Ticket Nummer: {_ticket.TicketNumber}";
-        IsPaidLabel.Text = $"Bezahlt: {_ticket.IsPaid}";
+        
+
     }
 
 

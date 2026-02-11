@@ -10,6 +10,7 @@
         
         <Label x:Name="CurrentPriceLabel" Text="" />
         <Label x:Name="TicketNumberLabel" Text="Ticket nummer" />
+        <Label x:Name="EntryTimeLabel" Text="Eintrittszeit"/>
 
         <Label x:Name="IsPaidLabel" Text="Ist bezahlt"/>
 

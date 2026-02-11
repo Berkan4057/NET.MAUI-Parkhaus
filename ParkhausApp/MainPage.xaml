@@ -5,11 +5,7 @@
 
     <ScrollView>
         <VerticalStackLayout>
-            <Label Text ="Parkhaus Einfahrt"/>
             
-            <Label x:Name="barrier" Text ="Schranke geschlossen"/>
-            <Button Text="Schranke offen und Ticket lösen" 
-                    Clicked="OpenBarrier"/>
             
 
         </VerticalStackLayout>
