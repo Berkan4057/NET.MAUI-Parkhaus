@@ -14,7 +14,9 @@ public partial class Dashboard : ContentPage
 	{
 		base.OnAppearing();
 		StartParkingTimer();
+		CurrentPrice();
 	}
+
 
 	public void StartParkingTimer()
 	{
@@ -30,5 +32,18 @@ public partial class Dashboard : ContentPage
 
 		});
 		
+    }
+	public void CurrentPrice()
+	{ 
+	Dispatcher.StartTimer(TimeSpan.FromSeconds(1), () =>
+		{
+            var Time = DateTime.Now - _ticket.EntryTime;
+            var TimeMinute = Math.Floor(Time.TotalMinutes);
+            double price = TimeMinute / 1 * 2;
+            CurrentPriceLabel.Text = $"Aktuelle Preis: {price} CHF";
+            return true;
+
+        });
+
     }
 }
