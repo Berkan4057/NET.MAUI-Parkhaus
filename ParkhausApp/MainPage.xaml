@@ -5,8 +5,14 @@
 
     <ScrollView>
         <VerticalStackLayout>
-            
-            
+            <Button x:Name="ButtonKLH " Text="" Clicked="ButtonChose"/>
+
+            <Button x:Name="ButtonBibliothek" Text=" " Clicked="ButtonChose"/>
+
+            <Button x:Name="ButtonGYM  " Text=" " Clicked="ButtonChose"/>
+
+
+
 
         </VerticalStackLayout>
     </ScrollView>

@@ -60,7 +60,7 @@ public partial class Dashboard : ContentPage
         await DisplayAlert("Zahlung", "Die Zahlung war erfolgreich. Sie können jetzt die Schranke öffnen.", "OK");
 
         // Navigate back to the main page
-        await Navigation.PopAsync();
+        await Navigation.PopToRootAsync();
 
     }
 
