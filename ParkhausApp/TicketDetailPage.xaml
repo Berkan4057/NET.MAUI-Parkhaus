@@ -16,7 +16,7 @@
 
 
 
-        <Button Text="Bezahlen" Clicked="PayButton_Clicked" />
+        <Button Text="Bezahlen und Schrankeöffnen" Clicked="PayButton_Clicked" />
 
 
     </VerticalStackLayout>

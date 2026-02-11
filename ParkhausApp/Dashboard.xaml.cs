@@ -15,7 +15,9 @@ public partial class Dashboard : ContentPage
 		base.OnAppearing();
 		StartParkingTimer();
 		CurrentPrice();
-	}
+        TicketNumberLabel.Text = $"Ticket Nummer: {_ticket.TicketNumber}";
+        IsPaidLabel.Text = $"Bezahlt: {_ticket.IsPaid}";
+    }
 
 
 	public void StartParkingTimer()
@@ -46,4 +48,17 @@ public partial class Dashboard : ContentPage
         });
 
     }
+    private async void PayButton_Clicked(object sender, EventArgs e)
+    {
+        _ticket.IsPaid = true;
+
+
+        await DisplayAlert("Zahlung", "Die Zahlung war erfolgreich. Sie können jetzt die Schranke öffnen.", "OK");
+
+        // Navigate back to the main page
+        await Navigation.PopAsync();
+
+    }
+
+
 }

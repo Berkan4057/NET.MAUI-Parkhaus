@@ -4,10 +4,15 @@
              x:Class="ParkhausApp.Dashboard"
              Title="Dashboard">
     <VerticalStackLayout>
-        <Label Text="Aktuelle Parkzeit"/>
+        
 
         <Label x:Name="CurrentParkTimeLabel" Text="" />
-        <Label Text="Aktuelle Parkpreis"/>
+        
         <Label x:Name="CurrentPriceLabel" Text="" />
+        <Label x:Name="TicketNumberLabel" Text="Ticket nummer" />
+
+        <Label x:Name="IsPaidLabel" Text="Ist bezahlt"/>
+
+        <Button Text="Bezahlen und Schrankeöffnen" Clicked="PayButton_Clicked" />
     </VerticalStackLayout>
 </ContentPage>
