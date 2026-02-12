@@ -36,12 +36,7 @@ namespace ParkhausApp
         
             => await Navigation.PushAsync(new Barrier());
 
-        private async void OnSettingsClicked(object sender, EventArgs e)
-        {
-         await DisplayAlert("Settings", "Kommt später", "OK");
-
-
-        }
+        
 
     }
 }
