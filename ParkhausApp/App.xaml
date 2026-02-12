@@ -5,10 +5,38 @@
              x:Class="ParkhausApp.App">
     <Application.Resources>
         <ResourceDictionary>
-            <ResourceDictionary.MergedDictionaries>
-                <ResourceDictionary Source="Resources/Styles/Colors.xaml" />
-                <ResourceDictionary Source="Resources/Styles/Styles.xaml" />
-            </ResourceDictionary.MergedDictionaries>
+            
+            <!-- Color -->
+            <Color x:Key="TileBackground">#2B2B2B</Color>
+            <Color x:Key="TileText">#FFFFFF</Color>
+            <Color x:Key="PageTextSecondary">#C9C9C9</Color>
+
+
+            <!-- Titel-->
+                <Style x:Key="TitelLabel" TargetType="Label">
+                <Setter Property="FontSize" Value="26"/>
+                <Setter Property="FontAttributes" Value="Bold"/>
+                <Setter Property="TextColor" Value="{StaticResource TileText}"/>
+            </Style>
+
+
+            <Style x:Key="SubtitleLabel" TargetType="Label">
+                <Setter Property="FontSize" Value="13 "/>
+                <Setter Property="FontAttributes" Value="{StaticResource PageTextSecondary}"/>
+            </Style>
+
+
+            <Style x:Key="GarageTileButton" TargetType="Button">
+                <Setter Property="BackgroundColor" Value="{StaticResource TileBackground}"/>
+                <Setter Property="TextColor" Value="{StaticResource TileText}"/>
+                <Setter Property="CornerRadius" Value="16"/>
+                <Setter Property="Padding" Value="14"/>
+                <Setter Property="FontSize" Value="14"/>
+                <Setter Property="LineBreakMode" Value="WordWrap"/>
+                <Setter Property="HeightRequest" Value="140"/>
+            </Style>
+
+
         </ResourceDictionary>
     </Application.Resources>
 </Application>

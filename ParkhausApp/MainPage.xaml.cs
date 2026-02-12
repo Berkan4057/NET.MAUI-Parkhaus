@@ -27,6 +27,8 @@ namespace ParkhausApp
            ButtonBibliothek.Text = $"{Nr2.ParkName}: {Nr2.FreeSpaces} freie Plätze";
            ButtonGYM.Text = $"{Nr3.ParkName}: {Nr3.FreeSpaces} freie Plätze";
 
+        
+        
         }
 
 
@@ -34,7 +36,12 @@ namespace ParkhausApp
         
             => await Navigation.PushAsync(new Barrier());
 
+        private async void OnSettingsClicked(object sender, EventArgs e)
+        {
+         await DisplayAlert("Settings", "Kommt später", "OK");
 
+
+        }
 
     }
 }
