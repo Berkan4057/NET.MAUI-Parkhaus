@@ -2,18 +2,36 @@
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="ParkhausApp.Dashboard"
-             Title="Dashboard">
-    <VerticalStackLayout>
-        
+             Title="">
+    <VerticalStackLayout Padding="20" Spacing="14">
+        <Label Text="Dashboard" Style="{StaticResource TitelLabel}"/>
 
-        <Label x:Name="CurrentParkTimeLabel" Text="" />
-        
-        <Label x:Name="CurrentPriceLabel" Text="" />
-        <Label x:Name="TicketNumberLabel" Text="Ticket nummer" />
-        <Label x:Name="EntryTimeLabel" Text="Eintrittszeit"/>
+        <Frame Style="{StaticResource CardFrame}">
+            <VerticalStackLayout Spacing="12">
+            <!-- Abschnitt 1 -->
+            <Label Text="Lieve" Style="{StaticResource SectionLabel}"/>
 
-        <Label x:Name="IsPaidLabel" Text="Ist bezahlt"/>
+            <Label x:Name="CurrentParkTimeLabel" Text="" Style="{StaticResource ValueLabel}"/>
 
-        <Button Text="Bezahlen und Schrankeöffnen" Clicked="PayButton_Clicked" />
+
+            <Label x:Name="CurrentPriceLabel" Text="" Style="{StaticResource ValueLabel}" />
+
+            <BoxView Style="{StaticResource Divider}" />
+
+            <!-- Abschnitt 2 -->
+            <Label x:Name="TicketNumberLabel" Text="Ticket nummer" Style="{StaticResource ValueLabel}"/>
+
+            <Label x:Name="EntryTimeLabel" Text="Eintrittszeit" Style="{StaticResource ValueLabel}"/>
+
+
+            <Label x:Name="IsPaidLabel" Text="Ist bezahlt" Style="{StaticResource ValueLabel}"/>
+
+                </VerticalStackLayout>
+        </Frame>
+
+        <Button Text="Bezahlen und Schranke öffnen"  
+                Style="{StaticResource ActionButton}" 
+                Clicked="PayButton_Clicked" />
+                
     </VerticalStackLayout>
 </ContentPage>
